@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <a href="#">Hello 1</a>
+        <a href="#">Hello 2</a>
+        <a href="#">Hello 3</a>
+        <a href="#">Hello 4</a>
+        <a href="#">Hello 5</a>
+        <a href="#">Hello 6</a>
+        <a href="#">Hello 7</a>
+        <button>OK</button>
+        <button>CANCEL</button>
+    </div>
+
+    <script>
+        const box = document.querySelector("#box");
+        box.addEventListener("click", function (event) {
+            console.log("YOYOYOYYO!");
+            if (event.target.tagName != "BUTTON") {
+                return;
+            }
+            alert(event.target.tagName);
+            console.log(event.target);
+        });
+    </script>
+</body>
+
+</html>

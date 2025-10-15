@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CircleBox from "./components/CircleBox";
 
 function App() {
   function clickedCircle(event) {
@@ -11,36 +12,24 @@ function App() {
     <>
       <section>
         <div className="circleWrapper">
-          <div
-            className="circle"
-            style={{ backgroundColor: "brown" }}
-            onClick={clickedCircle}
-          ></div>
-          <div
-            className="circle"
-            style={{ backgroundColor: "green" }}
-            onClick={clickedCircle}
-          ></div>
-          <div
-            className="circle"
-            style={{ backgroundColor: "yellow" }}
-            onClick={clickedCircle}
-          ></div>
-          <div
-            className="circle"
-            style={{ backgroundColor: "blue" }}
-            onClick={clickedCircle}
-          ></div>
-          <div
-            className="circle"
-            style={{ backgroundColor: "grey" }}
-            onClick={clickedCircle}
-          ></div>
-          <div
-            className="circle"
-            style={{ backgroundColor: "pink" }}
-            onClick={clickedCircle}
-          ></div>
+          <div onClick={clickedCircle}>
+            <CircleBox bgColor="red" />
+          </div>
+          <div onClick={clickedCircle}>
+            <CircleBox bgColor="green" />
+          </div>
+          <div onClick={clickedCircle}>
+            <CircleBox bgColor="blue" />
+          </div>
+          <div onClick={clickedCircle}>
+            <CircleBox bgColor="yellow" />
+          </div>
+          <div onClick={clickedCircle}>
+            <CircleBox bgColor="pink" />
+          </div>
+          <div onClick={clickedCircle}>
+            <CircleBox bgColor="grey" />
+          </div>
         </div>
       </section>
 
