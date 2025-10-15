@@ -33,7 +33,7 @@ Find parts in the UI, which gets repeated and structure these in components.**
 
 **Use `props` to pass data to child components.**
 
-*A child component is the component which you use within another component. For example we used the `<Section />` component in the `<App />` component in `hello-react`. The `<Section />` component is here the child of the `<App />` component.*
+*A child component is the component which you use within another component.*
 
 
 ***You should come up with at least 3 components (App doesn't count)***
