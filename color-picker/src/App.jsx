@@ -2,7 +2,6 @@ import { useState } from "react";
 
 function App() {
   function clickedCircle(event) {
-    // console.log(event.target.style.backgroundColor);
     setSelectedColor(event.target.style.backgroundColor);
   }
 
