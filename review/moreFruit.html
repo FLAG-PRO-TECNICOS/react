@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const fruit = [
+            "apples", "bananas", "pears", "kiwis", "mangos", "strawberries", "oranges", "cherries"
+        ];
+        fruit.push("more strawberries");
+
+        // const bigFruit = [];
+
+        // for (let i = 0; i < fruit.length; i++) {
+        //     console.log(fruit[i] + " : " + fruit[i].length);
+        //     if (fruit[i].length > 9) {
+        //         console.log("SIM");
+        //         bigFruit.push(fruit[i]);
+        //     } else {
+        //         console.log("NAO");
+        //     }
+        // }
+
+        // console.log(fruit);
+        // console.log(bigFruit);
+
+        // const bigFruit = fruit.filter(function (value) {
+        //     if (value.length > 10) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // });
+
+        // const bigFruit = fruit.filter(function (value) {
+        //     return value.length > 10;
+        // });
+
+        // const bigFruit = fruit.filter((value) => {
+        //     return value.length > 10;
+        // });
+
+        const bigFruit = fruit.filter(value => value.length > 7);
+
+        console.log(fruit);
+        console.log(bigFruit);
+
+        function myAwesomeFilter(myArray, callback) {
+            const newArray = [];
+            for (let i = 0; i < myArray.length; i++) {
+                if (callback(myArray[i]) == true) {
+                    newArray.push(myArray[i]);
+                }
+            }
+            return newArray;
+        }
+
+        const otherBigFruit = myAwesomeFilter(fruit, value => value.length > 5);
+        console.log(otherBigFruit);
+
+    </script>
+</body>
+
+</html>
