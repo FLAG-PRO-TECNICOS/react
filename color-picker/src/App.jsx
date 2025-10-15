@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CircleBox from "./components/CircleBox";
+import PreviewBox from "./components/PreviewBox";
 
 function App() {
   function clickedCircle(event) {
@@ -33,10 +34,12 @@ function App() {
         </div>
       </section>
 
-      <div
+      <PreviewBox color={selectedColor} />
+
+      {/* <div
         className="previewBox"
         style={{ backgroundColor: selectedColor }}
-      ></div>
+      ></div>  */}
     </>
   );
 }
