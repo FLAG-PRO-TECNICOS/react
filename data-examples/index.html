@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const name = "Joe";
+        // const age = 30;
+
+        // const favColors = ["Orange", "Blue", "Yellow", "Pink"];
+
+        // const lastIndex = favColors.length - 1;
+        // console.log(favColors[lastIndex]);
+
+        // const name2 = "Sophia"
+        // const age2 = 40;
+
+        // const favColors2 = ["Blue", "Red", "Gree"];
+
+        const p1 = {
+            name: "Joe",
+            age: 30,
+            favColors: ["Orange", "Blue", "Yellow", "Pink"]
+        }
+
+        const p2 = {
+            name: "Sophia",
+            age: 40,
+            favColors: ["Blue", "Red", "Green"]
+        }
+
+        const people = [
+            p1,
+            p2,
+            {
+                name: "Martha",
+                age: 25,
+                favColors: []
+            }
+        ];
+
+        // console.log(people[0].favColors[1]);
+
+
+        people[0].favColors.forEach(function (value) {
+            console.log(value);
+        })
+
+
+    </script>
+</body>
+
+</html>

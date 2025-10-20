@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const names = ["Joe", "Bob", "Martha", "Thomas"];
+
+        const changedNames = names.map(function (value) {
+            return value + "!";
+        });
+
+        console.log(names);
+        console.log(changedNames);
+
+        const people = [
+            {
+                name: "Helder",
+                age: 44
+            },
+            {
+                name: "Joe",
+                age: 30
+            },
+            {
+                name: "Bob",
+                age: 20
+            },
+            {
+                name: "Sophia",
+                age: 50
+            },
+            {
+                name: "Martha",
+                age: 30
+            },
+        ];
+
+        const nameAge = people.map(function (value) {
+            // return value.name + ", " + value.age + " years old!";
+            return `${value.name}, ${value.age} years old!`;
+        })
+
+        console.log(people)
+        console.log(nameAge)
+
+
+        const categories = ["Fashion", "Toys", "Videogames", "Electronics"];
+        const lis = categories.map(function (value) {
+            return `<li><a href="#">${value}</a></li>`;
+        });
+
+        console.log(categories);
+        console.log(lis);
+    </script>
+</body>
+
+</html>

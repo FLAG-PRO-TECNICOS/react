@@ -1,0 +1,43 @@
+.actor {
+    width: 200px;
+    min-height: 50px;
+    padding: 10px;
+    border: solid 1px lightgrey;
+    box-shadow: 5px 5px 10px grey;
+
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.actor > img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.movieCard {
+    width: 300px;
+    padding: 10px;
+    border: solid 1px lightgrey;
+    box-shadow: 5px 5px 10px grey;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movieCard > img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movieCard > h2 > span {
+    font-size: 14px;
+    color: blue;
+}
