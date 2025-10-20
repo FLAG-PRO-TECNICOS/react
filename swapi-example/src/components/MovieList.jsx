@@ -511,14 +511,22 @@ const data = {
 };
 
 // Criar uma lista so com os titulos dos filmes:
+// TPC:
+// agora em x de uma lista so com os titulos,
+// mostrar antes uma div (ou elemento similar)
+// que contem o titulo, ano, realizador, e numero do episodio
+//
+// BONUS: numero do episodio em numeracao Romana!
+
 function MovieList() {
   return (
     <>
-      {/* <ul>
-        <li>A new Hope</li>
-        <li>Empire</li>
-        <li>Return of the Jedi</li>
-      </ul> */}
+      {/* <h1>{data.results[1].director}</h1> */}
+      <ul>
+        {data.results.map((value) => (
+          <li>{value.title}</li>
+        ))}
+      </ul>
     </>
   );
 }
