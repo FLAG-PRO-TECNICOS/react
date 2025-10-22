@@ -518,15 +518,41 @@ const data = {
 //
 // BONUS: numero do episodio em numeracao Romana!
 
+function extractYear(dateString) {
+  return dateString.substring(0, 4);
+}
+
+function convertEpisodeIdToRomanNumeral(episodeId) {
+  const map = {
+    1: "I",
+    2: "II",
+    3: "III",
+    4: "IV",
+    5: "V",
+    6: "VI",
+  };
+  return map[episodeId];
+}
+
 function MovieList() {
   return (
     <>
-      {/* <h1>{data.results[1].director}</h1> */}
-      <ul>
+      {/* <ul>
         {data.results.map((value) => (
           <li>{value.title}</li>
         ))}
-      </ul>
+      </ul> */}
+
+      {data.results.map((value) => (
+        <div>
+          <div>
+            {value.title} - {extractYear(value.release_date)}
+          </div>
+          <div>Directed by {value.director}</div>
+          <div>Episode {convertEpisodeIdToRomanNumeral(value.episode_id)}</div>
+          <hr />
+        </div>
+      ))}
     </>
   );
 }
