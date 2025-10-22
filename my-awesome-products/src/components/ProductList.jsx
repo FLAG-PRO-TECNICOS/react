@@ -573,8 +573,28 @@ const data = {
 //
 // BONUS: mostrar o preco com a percentagem de desconto aplicada
 
+function applyDiscount(value, discount) {
+  const result = value - (value * discount) / 100;
+  //   return Math.round(result * 100) / 100;
+  return result.toFixed(2);
+}
+
 function ProductList() {
-  return <></>;
+  return (
+    <>
+      {data.products.map((product) => (
+        <div>
+          <img src={product.thumbnail} />
+          <div>{product.title}</div>
+          <div className="regularPrice">{product.price}€</div>
+          <div className="discount">{product.discountPercentage}%</div>
+          <div className="discountedPrice">
+            {applyDiscount(product.price, product.discountPercentage)}€
+          </div>
+        </div>
+      ))}
+    </>
+  );
 }
 
 export default ProductList;
