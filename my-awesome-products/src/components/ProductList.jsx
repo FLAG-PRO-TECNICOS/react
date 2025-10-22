@@ -565,6 +565,14 @@ const data = {
   skip: 0,
   limit: 10,
 };
+
+// Exercicio:
+// mostrar os items em elementos separados (por exemplo div)
+// ao vosso gosto mas no minimo
+// titulo, preco, imagem
+//
+// BONUS: mostrar o preco com a percentagem de desconto aplicada
+
 function ProductList() {
   return <></>;
 }
