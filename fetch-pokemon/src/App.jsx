@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import PokeCard from "./components/PokeCard";
 
 function App() {
   const [pokeList, setPokeList] = useState([]);
@@ -14,11 +15,11 @@ function App() {
 
   return (
     <>
-      <ul>
+      <div className="flex flex-wrap gap-5">
         {pokeList.map((value) => (
-          <li>{value.url}</li>
+          <PokeCard url={value.url} />
         ))}
-      </ul>
+      </div>
     </>
   );
 }

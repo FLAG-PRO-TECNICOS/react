@@ -1,19 +1,32 @@
 import { useEffect, useState } from "react";
 
-function PokeCard() {
-  const [pokeInfo, setPokeInfo] = useState({});
+function PokeCard({ url }) {
+  const [pokeInfo, setPokeInfo] = useState({ types: [] });
 
   useEffect(() => {
-    const url = "https://pokeapi.co/api/v2/pokemon/7";
-    fetch(url); // ...
+    (async () => {
+      const response = await fetch(url);
+      const result = await response.json();
+      setPokeInfo(result);
+    })();
   }, []);
 
   return (
     <>
-      <div>
-        <img src="" alt="" />
-        <div>NAME</div>
-        <div>WEIGHT</div>
+      <div className="flex flex-col justify-center w-50 h-75 rounded-xl bg-blue-200 p-5 shadow-xl">
+        <img
+          src={pokeInfo.sprites?.other["official-artwork"].front_default}
+          alt=""
+        />
+        <div>NAME: {pokeInfo.name}</div>
+        <div>WEIGHT: {pokeInfo.weight} lbs</div>
+        <div>Types:</div>
+        {/* <div>{pokeInfo.types?.[0].type.name}</div> */}
+        <div>
+          {pokeInfo.types.map((value) => (
+            <span>{value.type.name} </span>
+          ))}
+        </div>
       </div>
     </>
   );
