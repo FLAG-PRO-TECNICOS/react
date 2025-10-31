@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
+import typeColors from "../services/typeColors";
+import { getPokemonInfo } from "../services/fetchPokemon";
 
 function PokeCard({ url }) {
   const [pokeInfo, setPokeInfo] = useState({ types: [] });
 
   useEffect(() => {
     (async () => {
-      const response = await fetch(url);
-      const result = await response.json();
+      const result = await getPokemonInfo(url);
       setPokeInfo(result);
     })();
   }, []);
@@ -24,7 +25,9 @@ function PokeCard({ url }) {
         {/* <div>{pokeInfo.types?.[0].type.name}</div> */}
         <div>
           {pokeInfo.types.map((value) => (
-            <span>{value.type.name} </span>
+            <span style={{ backgroundColor: typeColors[value.type.name] }}>
+              {value.type.name}{" "}
+            </span>
           ))}
         </div>
       </div>
