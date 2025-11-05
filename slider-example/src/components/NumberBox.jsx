@@ -1,4 +1,4 @@
-function Slider({ value, onChange }) {
+function NumberBox({ value, onChange }) {
   function handleChange(event) {
     console.log(event.target.value);
     onChange(parseInt(event.target.value));
@@ -7,7 +7,7 @@ function Slider({ value, onChange }) {
   return (
     <>
       <input
-        type="range"
+        type="number"
         value={value}
         onChange={handleChange}
         min="0"
@@ -17,4 +17,4 @@ function Slider({ value, onChange }) {
   );
 }
 
-export default Slider;
+export default NumberBox;
