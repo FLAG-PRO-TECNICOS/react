@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input placeholder="something" id="textInput">
+    <div id="box">
+
+    </div>
+    <button id="saveButton">SAVE!</button>
+    <button id="loadButton">LOAD!</button>
+
+    <script>
+        const textInput = document.querySelector("#textInput");
+        const box = document.querySelector("#box");
+        const saveButton = document.querySelector("#saveButton");
+        const loadButton = document.querySelector("#loadButton");
+
+        saveButton.addEventListener("click", function () {
+
+            const x = {
+                name: "Joe",
+                age: 20,
+                city: "NY",
+                data: [23, 34, 5, 4, 3]
+            }
+            const jsonValue = JSON.stringify(x);
+
+            localStorage.setItem("userName", jsonValue);
+
+        });
+
+        loadButton.addEventListener("click", function () {
+
+            const result = localStorage.getItem("userName");
+            const value = JSON.parse(result);
+
+            box.innerHTML = value.name;
+
+        });
+    </script>
+</body>
+
+</html>
