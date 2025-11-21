@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "url": "/cities/lisbon",
+    "city": "Lisboa",
+    "images": [
+      "https://images.unsplash.com/photo-1573480893434-287f7e9a0493",
+      "https://images.unsplash.com/photo-1543836950-b1c37a60eb2b"
+    ],
+    "text": "Lisbon, Portugal's vibrant capital, is known for its rich cultural heritage, picturesque hills, and iconic yellow trams. A blend of old-world charm and modern vibrancy, the city boasts historic neighborhoods like Alfama, stunning viewpoints like Miradouro da Senhora do Monte, and delicious cuisine including the famous pastéis de nata."
+  },
+  {
+    "id": 2,
+    "url": "/cities/barcelona",
+    "city": "Barcelona",
+    "images": [
+      "https://images.unsplash.com/photo-1560768487-f30b3c221b2a",
+      "https://images.unsplash.com/photo-1598972630916-b2578a85f02d"
+    ],
+    "text": "Barcelona, located on the northeastern coast of Spain, is famous for its incredible architecture by Antoni Gaudí, including the awe-inspiring Sagrada Família and Park Güell. The city's vibrant beaches, lively markets, and world-class museums make it a must-visit destination for culture and art lovers."
+  },
+  {
+    "id": 3,
+    "url": "/cities/paris",
+    "city": "Paris",
+    "images": [
+      "https://images.unsplash.com/photo-1562596219-319b9b34b3f8",
+      "https://images.unsplash.com/photo-1577028463846-576f0ac3f51a"
+    ],
+    "text": "Known as the 'City of Light,' Paris is renowned for its stunning landmarks such as the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral. From charming cafes to world-class art galleries, Paris offers an unforgettable experience of romance, culture, and history."
+  },
+  {
+    "id": 4,
+    "url": "/cities/new-york",
+    "city": "New York",
+    "images": [
+      "https://images.unsplash.com/photo-1572086022-d30a1fe9a5f6",
+      "https://images.unsplash.com/photo-1549880359-2a3478f3f99d"
+    ],
+    "text": "New York City, the city that never sleeps, is home to iconic landmarks such as the Statue of Liberty, Times Square, and Central Park. With its diverse neighborhoods, world-class theaters on Broadway, and unbeatable skyline, New York offers a dynamic, fast-paced atmosphere."
+  },
+  {
+    "id": 5,
+    "url": "/cities/tokyo",
+    "city": "Tokyo",
+    "images": [
+      "https://images.unsplash.com/photo-1571235214-2343c6a3d380",
+      "https://images.unsplash.com/photo-1521521974-cbc74d5be9ea"
+    ],
+    "text": "Tokyo is a vibrant fusion of cutting-edge technology, traditional culture, and stunning natural beauty. From neon-lit skyscrapers in Shibuya to serene temples like Sensō-ji in Asakusa, Tokyo offers a mesmerizing blend of old and new that captivates every traveler."
+  },
+  {
+    "id": 6,
+    "url": "/cities/sydney",
+    "city": "Sydney",
+    "images": [
+      "https://images.unsplash.com/photo-1552582424-16b408bb17a5",
+      "https://images.unsplash.com/photo-1552582424-e5a8a54eada7"
+    ],
+    "text": "Sydney, Australia’s iconic harbor city, is famous for its stunning Opera House, Harbour Bridge, and beautiful beaches like Bondi and Manly. With a laid-back yet cosmopolitan vibe, Sydney is perfect for outdoor enthusiasts, food lovers, and culture seekers alike."
+  },
+  {
+    "id": 7,
+    "url": "/cities/london",
+    "city": "London",
+    "images": [
+      "https://images.unsplash.com/photo-1509234667509-b6b2d5190d08",
+      "https://images.unsplash.com/photo-1512103733993-b685e9895701"
+    ],
+    "text": "London, the capital of the UK, is steeped in history and tradition. From the majestic Buckingham Palace to the historic Tower of London and modern attractions like the London Eye, the city blends the old and the new effortlessly. London's diverse neighborhoods, pubs, and theaters create a vibrant cultural scene."
+  },
+  {
+    "id": 8,
+    "url": "/cities/rome",
+    "city": "Rome",
+    "images": [
+      "https://images.unsplash.com/photo-1542726877-f4b5b267b9b7",
+      "https://images.unsplash.com/photo-1588749842423-85e5b7ec6856"
+    ],
+    "text": "Rome, the Eternal City, is a treasure trove of ancient history, art, and culture. From the Roman Forum to the Colosseum and the Vatican City, Rome offers a mesmerizing journey through time. Enjoy the beautiful piazzas, charming cobbled streets, and delicious Italian cuisine."
+  },
+  {
+    "id": 9,
+    "url": "/cities/amsterdam",
+    "city": "Amsterdam",
+    "images": [
+      "https://images.unsplash.com/photo-1562581798-60ae14283bc3",
+      "https://images.unsplash.com/photo-1584305175417-b14349bbd292"
+    ],
+    "text": "Amsterdam, the capital of the Netherlands, is known for its picturesque canals, historic architecture, and vibrant cultural scene. Visitors can explore world-class museums like the Van Gogh Museum and Anne Frank House, or take a leisurely bike ride through the city's charming neighborhoods."
+  },
+  {
+    "id": 10,
+    "url": "/cities/berlin",
+    "city": "Berlin",
+    "images": [
+      "https://images.unsplash.com/photo-1552576823-4b85b9c2b131",
+      "https://images.unsplash.com/photo-1569461212-3b35bc810295"
+    ],
+    "text": "Berlin is a dynamic city that blends modern culture with a deep history. From the iconic Brandenburg Gate to the remnants of the Berlin Wall, the city is a symbol of resilience and transformation. Its artsy neighborhoods, vibrant nightlife, and thriving tech scene make it a hotspot for creative souls."
+  },
+  {
+    "id": 11,
+    "url": "/cities/porto",
+    "city": "Porto",
+    "images": [
+      "https://images.unsplash.com/photo-1573480893434-287f7e9a0493",
+      "https://images.unsplash.com/photo-1543836950-b1c37a60eb2b"
+    ],
+    "text": "Porto is better than Lisbon"
+  }
+]
