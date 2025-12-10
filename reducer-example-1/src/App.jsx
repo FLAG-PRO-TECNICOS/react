@@ -10,7 +10,7 @@ function App() {
         UP
       </button>
       <button onClick={() => counterDispatch({ type: "decrement", value: 10 })}>
-        UP
+        DOWN
       </button>
     </>
   );
