@@ -1,7 +1,20 @@
 import { createSlice, createSelector } from "@reduxjs/toolkit";
 
 const initialState = {
-  itemsById: {}, // { [id]: { id, name, price, quantity } }
+  itemsById: {
+    "sku_1": {
+      id: "sku_1",
+      name: "salsichas",
+      price: 3,
+      quantity: 5
+    },
+    "sku_3": {
+      id: "sku_3",
+      name: "bolachas",
+      price: 4,
+      quantity: 20
+    }
+  }, // { [id]: { id, name, price, quantity } }
 };
 
 const cartSlice = createSlice({
@@ -35,7 +48,8 @@ const cartSlice = createSlice({
       }
     },
     clearCart(state) {
-      state.itemsById = {};
+      state.itemsById = {}
+      // state.itemsById = initialState.itemsById
     },
   },
 });
